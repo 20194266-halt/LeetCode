@@ -7,7 +7,7 @@ function find(arr, x, low, high)
       return find(arr, x, low, mid - 1);
     return find(arr, x, mid + 1, high);
   }
-  return -1;//[1,2,3,4][5,6]
+  return -1;
 }
 var findMedianSortedArrays = function(nums1, nums2) {
     let nums3, l = (nums1.length()+nums2.length())%2,a = nums1[nums1.length()-1], b = nums2[nums2.length()-1];
